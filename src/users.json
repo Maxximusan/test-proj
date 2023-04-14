@@ -1,0 +1,58 @@
+[
+    {
+        "user": "Jared Leto",
+        "avatar": "https://kinoafisha.ua/upload/persons/1220/src_22kkr006dgared-leto.jpg",
+        "tweets": 8,
+        "followers": 100600,
+        "id": "1"
+    },
+    {
+        "user": "Tom Delonge",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdIas6nCzIYPtQEaX4oRnwxmvgiv4zwDX-Kg&usqp=CAU",
+        "tweets": 37,
+        "followers": 70800,
+        "id": "2"
+    },
+    {
+        "user": "Benjamin Burnley",
+        "avatar": "https://i.imgur.com/mtIALKB.gif?1",
+        "tweets": 42,
+        "followers": 82300,
+        "id": "3"
+    },
+    {
+        "user": "Christine Lorentzen",
+        "avatar": "https://www.rusbionicle.com/images/news/lore-cryoshell-14-04-2010-news.jpg",
+        "tweets": 82,
+        "followers": 50500,
+        "id": "4"
+    },
+    {
+        "user": "Sully Erna",
+        "avatar": "https://www.zvuki.ru/images/photo/45/45565.jpg",
+        "tweets": 74,
+        "followers": 100800,
+        "id": "5"
+    },
+    {
+        "user": "Chloe Chaidez",
+        "avatar": "https://i.pinimg.com/564x/39/b9/d4/39b9d42178e1a9b1912146a8b9418bc8--the-band-kittens.jpg",
+        "tweets": 24,
+        "followers": 37500,
+        "id": "6"
+    },
+    {
+        "user": "Adam Gontier",
+        "avatar": "https://i.pinimg.com/originals/e9/6a/5b/e96a5bdc7a28a44522ebcb411c8d01c5.jpg",
+        "tweets": 31,
+        "followers": 110500,
+        "id": "7"
+    },
+    {
+        "user": "Liam Gallagher",
+        "avatar": "https://images.mubicdn.net/images/cast_member/109443/cache-226460-1515719453/image-w856.jpg?size=800x",
+        "tweets": 45,
+        "followers": 105500,
+        "id": "8"
+    }
+]
