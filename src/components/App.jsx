@@ -6,7 +6,7 @@ import { LoadMoreBtn } from "./LoadMoreBtn/LoadMoreBtn";
 
 export const App = () => {
   console.log(users.length);
-  const [needQuantityForPage, setNeedQuantityForPage] = useState(4);
+  const [needQuantityForPage, setNeedQuantityForPage] = useState(8);
 
   const sliceUsers = users.slice(0, needQuantityForPage);
 
