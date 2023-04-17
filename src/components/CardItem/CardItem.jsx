@@ -1,18 +1,6 @@
-import { useState, useEffect } from "react";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 import * as SC from "./CardItem.styled";
-
-const useLocalStorage = (key, defaultValue) => {
-  const [state, setState] = useState(() => {
-    return JSON.parse(window.localStorage.getItem(key)) ?? defaultValue;
-  });
-
-  useEffect(() => {
-    window.localStorage.setItem(key, JSON.stringify(state));
-  }, [key, state]);
-
-  return [state, setState];
-};
 
 export const CardItem = (props) => {
   const { card } = props;
@@ -23,15 +11,6 @@ export const CardItem = (props) => {
   );
 
   const [noClick, setNoClick] = useLocalStorage("btn" + card.id, false);
-
-  // const [followers, setFollowers] = useState(
-  //   JSON.parse(window.localStorage.getItem("followers" + card.id)) ??
-  //     card.followers
-  // );
-
-  // const [noClick, setNoClick] = useState(
-  //   JSON.parse(window.localStorage.getItem("btn" + card.id)) ?? false
-  // );
 
   const onClickStartBtn = (event) => {
     setFollowers((prev) => prev + 1);
@@ -44,17 +23,6 @@ export const CardItem = (props) => {
     setFollowers((prev) => prev - 1);
     setNoClick(false);
   };
-
-  // useEffect(() => {
-  //   window.localStorage.setItem(
-  //     "followers" + card.id,
-  //     JSON.stringify(followers)
-  //   );
-  // }, [followers, card.id]);
-
-  // useEffect(() => {
-  //   window.localStorage.setItem("btn" + card.id, JSON.stringify(noClick));
-  // }, [noClick, card.id]);
 
   return (
     <SC.CardContainer key={card.id}>
