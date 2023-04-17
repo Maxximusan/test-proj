@@ -1,9 +1,8 @@
 import styled from "styled-components";
-// import img from "../images/picture2.png";
+
 import img from "../../images/picture2.png";
 import logo from "../../images/Vector.png";
 import circle from "../../images/Ellipse.png";
-import hans from "../../images/Hansel.png";
 
 export const CardContainer = styled.li`
   position: relative;
@@ -44,7 +43,7 @@ export const PictureSection = styled.div`
 export const DividingStrip = styled.div`
   width: 380px;
   height: 8px;
-  margin-bottom: 62px;
+  margin-bottom: 42px;
   background-color: #ebd8ff;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
     inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
@@ -65,9 +64,17 @@ export const AvatarWindow = styled.div`
 export const Avatar = styled.img`
   width: 63px;
   height: 62px;
-  /* background-image: url(${hans}); */
+
   border-radius: 50px;
-  /* background-color: #5736a3; */
+`;
+export const UserName = styled.p`
+  font-family: "Courier New", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: #b96950;
 `;
 
 export const Quantity = `

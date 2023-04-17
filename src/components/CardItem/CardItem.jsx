@@ -34,6 +34,8 @@ export const CardItem = (props) => {
         <SC.Avatar src={card.avatar} alt="фото" />
       </SC.AvatarWindow>
 
+      <SC.UserName>{card.user}</SC.UserName>
+
       <SC.TweewsQuantity>{card.tweets} Tweets</SC.TweewsQuantity>
       <SC.FollowersQuantity>
         {followers.toLocaleString("en")} Followers
