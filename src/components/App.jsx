@@ -1,35 +1,18 @@
-import { useState, useEffect } from "react";
-import * as SC from "./App.styled";
-import { CardList } from "./CardList/CardList";
-import { LoadMoreBtn } from "./LoadMoreBtn/LoadMoreBtn";
-import * as MockApi from "../Api/mockapiBackend";
+import { lazy } from "react";
+import { Route, Routes } from "react-router-dom";
+import { SharedLayout } from "./SharedLayout/SharedLayout";
+
+const HomePage = lazy(() => import("../pages/HomePage/Home"));
+const UsersPage = lazy(() => import("../pages/UsersPage/Users"));
 
 export const App = () => {
-  const [users, setUsers] = useState([]);
-  const [needQuantityForPage, setNeedQuantityForPage] = useState(8);
-
-  useEffect(() => {
-    async function usersFetch() {
-      try {
-        const userss = await MockApi.fetchUsers();
-        setUsers(userss);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-    usersFetch();
-  }, []);
-
-  const sliceUsers = users.slice(0, needQuantityForPage);
-
-  const loadMore = () => {
-    setNeedQuantityForPage((prevState) => prevState + needQuantityForPage);
-  };
-
   return (
-    <SC.MainContainer>
-      <CardList users={sliceUsers} />
-      <LoadMoreBtn loadMore={loadMore} />
-    </SC.MainContainer>
+    <Routes>
+      <Route path="/" element={<SharedLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path="/tweets" element={<UsersPage />} />
+        <Route path="*" element={<HomePage />} />
+      </Route>
+    </Routes>
   );
 };

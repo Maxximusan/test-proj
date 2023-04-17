@@ -6,4 +6,5 @@ export const MainContainer = styled.main`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #d8b1a2;
 `;
