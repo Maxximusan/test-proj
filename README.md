@@ -1,10 +1,12 @@
-# Getting Started with Create React App
+This project is a collection of rock singers' tweets from the API. You can get data on the number of tweets and followers. At this stage, the project is still under development...
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Built with
 
-## Available Scripts
-
-In the project directory, you can run:
+- react
+- node.js
+- axios
+- react-router-dom
+- styled-components
 
 ### `npm start`
 
